@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.25" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/product-sans");
+      body {
+        font-family: "Product Sans", sans-serif;
+      }
+      .card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        margin-left: 10px;
+      }
+      .card .icon {
+        /* Style for icon */
+        margin-bottom: 15px;
+      }
+      .card h2 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .card p {
+        margin-bottom: 15px;
+      }
+      .card a {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="bg-gradient-to-t from-white" style="margin-bottom: 50px">
+      <nav class="w-full fixed top-0 bg-white z-10">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold text-indigo-900"
+              >Shankhosuvro Ghosh.</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#aboutme">about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#experiences">Education</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#experiences">experiences</a>
+            </li>
+
+            <li class="hover:text-gray-500">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/logo.jpg"
+            class="hidden md:block w-5 cursor-pointer"
+            alt="moon"
+            style="width: 50px"
+          />
+        </div>
+      </nav>
+      <div
+        id="aboutme"
+        class="container mx-auto flex gap-20 items-center"
+        style="margin-top: 80px"
+      >
+        <!-- Image Section -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden">
+            <img
+              src="./img/portrait.png"
+              alt="Portrait of Shankhosuvro Ghosh"
+            />
+          </div>
+        </div>
+        <!-- About Me Section -->
+        <div class="flex flex-col gap-3">
+          <h1 class="text-3xl font-medium">About me</h1>
+          <p class="text-gray-400">
+            Hi, I'm Shankhosuvro Ghosh, a fresher with a keen interest in web
+            development and cybersecurity. I am eager to learn, grow, and
+            contribute to innovative projects while building my skills and
+            gaining hands-on experience. Let's connect and create something
+            impactful together!
+          </p>
+          <h2 class="text-gray-400 font-medium">Cybersecurity</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">CSS/Tailwind CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-2/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">SQL</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">Python</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div><h1 class="font-bold text-3xl text-center">Education</h1></div>
+      <div
+        style="
+          text-align: center;
+          border: 1px solid #ddd;
+          border-radius: 20px;
+          width: 600px;
+          margin-left: 300px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          padding: 17px;
+        "
+      >
+        <p style="margin-bottom: 5px">
+          <span style="font-weight: bold">Bachelor of Technology</span>, Kalinga
+          Institute of Industrial Technology, Expected 2025
+        </p>
+        <p style="margin-bottom: 5px">
+          <span style="font-weight: bold">Higher Secondary Education</span>,
+          Maharishi Vidya Mandir, 2019-2021
+        </p>
+        <p>
+          <span style="font-weight: bold"> Secondary Education </span>,M.P.
+          Birla Foundation Higher Secondary School, 2007 - 2018
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="container mx-auto" style="margin-top: 0">
+        <div class="flex justify-center">
+          <h1 class="font-bold text-3xl text-center">Experiences</h1>
+        </div>
+        <div
+          id="experiences"
+          class="container"
+          style="
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+            margin-bottom: 20x;
+          "
+        >
+          <div class="card">
+            <div class="icon"><img src="./img/gyansys.png" alt="" /></div>
+            <h2>Software Engineer Trainee (2025-Present)</h2>
+            <p>
+              Currently working as a Software Engineer Trainee at Gyansys, in
+              the Microsoft Developement team.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="./img/celebal-logo.webp" style="width: 230px" />
+            </div>
+            <h2>Summer Intern (Jun 2024 - Aug 2024)</h2>
+            <ul>
+              <li>
+                Completed tasks involving writing SQL queries for the Adventure
+                Works database.
+              </li>
+              <li>Worked primarily with T-SQL and Microsoft SQL Server.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center m" style="margin-top: 60px">
+          <h1 class="font-bold text-3xl text-center">Projects</h1>
+        </div>
+        <div
+          id="projects"
+          class="container"
+          style="display: flex; margin-top: 20px; justify-content: space-evenly"
+        >
+          <div class="card">
+            <div class="icon">
+              <img style="border-radius: 20px" src="img/IDS.webp" alt="" />
+            </div>
+            <h2>Netwatch-IDS</h2>
+            <p>
+              This IDS monitors network traffic to detect attacks such as ARP
+              poisoning, DNS amplification, DNS spoofing, ping of death, port
+              scans, and SYN flood attacks.
+            </p>
+            <a
+              style="color: black"
+              href="https://github.com/Shankhosuvro-G/Netwatch-IDS"
+              >Read more</a
+            >
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="./img/Python-Emblem.png" />
+            </div>
+            <h2>Password Guard</h2>
+            <p>
+              Desingned a python library to evaluate the security level of
+              passwords.
+            </p>
+            <a
+              style="color: black"
+              href="https://github.com/Shankhosuvro-G/Netwatch-IDS"
+              >Read more</a
+            >
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img
+                style="border: none; margin-top: 0"
+                src="./img/weather.png"
+              />
+            </div>
+            <h2>Weather App</h2>
+            <p>
+              A simple weather web app which shows the weather details based on
+              location .
+            </p>
+            <p>
+              <a
+                style="color: black"
+                href="https://github.com/Shankhosuvro-G/weather_app"
+                >Read more</a
+              >
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img
+                src="./img/minimalistic journey of a fictional ecommerce website Luxecart founded in 2022.png"
+                style="border-radius: 20px"
+              />
+            </div>
+            <h2>LuxeCart</h2>
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <div style="margin-top: 50px"></div>
+        <div
+          id="contact"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+          "
+        >
+          <div class="container mx-auto">
+            <h1 class="text-3xl font-bold" style="text-align: center">
+              Contact
+            </h1>
+            <p class="text-gray-400" style="text-align: center">
+              Do you have an idea? Let's discuss it and see what we can do
+              together.
+            </p>
+          </div>
+          <div
+            style="
+              margin-top: 20px;
+              padding: 20px;
+              display: flex;
+              border: 1px solid black;
+              border-radius: 20px;
+            "
+          >
+            <img style="width: 25px" src="./img/envelope.png" alt="" />
+            <a href="mailto:shankhosuvro.ghosh@gmail.com"
+              ><h3 style="margin-right: 30px; margin-left: 3px">Mail</h3></a
+            >
+            <img
+              style="width: 23px; height: 23px; margin-right: 4px"
+              src="./img/linkedin-logo.png"
+              alt=""
+            /><a
+              href="https://www.linkedin.com/in/shankhosuvro-ghosh-b0552622b/"
+              style="color: black"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 20px; text-align: center; margin-bottom: 20px">
+      <h3 class="text-gray-400">
+        Copyright © 2025 Shankhhosuvro Ghosh. All Rights Reserved.
+      </h3>
+    </div>
+  </body>
+</html>
