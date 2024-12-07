@@ -34,18 +34,35 @@
         color: blue;
         text-decoration: none;
       }
+      @media (max-width: 768px) {
+        #aboutme,
+        #experiences,
+        #projects {
+          flex-direction: column; /* Stack cards vertically */
+          align-items: center; /* Center the cards */
+        }
+
+        .card {
+          width: 90%; /* Adjust the card width for smaller screens */
+          margin-bottom: 20px; /* Add spacing between cards */
+        }
+      }
     </style>
     <title>Portfolio</title>
+    <head>
+      <title>Portfolio</title>
+      <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+    </head>
   </head>
 
   <body>
     <div
       class="bg-gradient-to-t from-white"
-      style="margin-bottom: 50px; margin-right: 200px; margin-left: 100px"
+      style="margin-bottom: 50px; margin-right: 200px; margin-left: 20px"
     >
-      <nav class="fixed top-0 bg-white z-10">
+      <nav class="w-full fixed top-0 bg-white z-10">
         <div class="container py-5 flex items-center justify-between">
-          <div class="flex items-center gap-2" style="margin-right: 150px">
+          <div class="flex items-center gap-2" style="margin-right: 100px">
             <span class="text-2xl font-bold text-indigo-900"
               >Shankhosuvro Ghosh.</span
             >
@@ -53,7 +70,7 @@
           <ul
             class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
           >
-            <li class="hover:text-gray-500" style="margin-left: 130px">
+            <li class="hover:text-gray-500" style="margin-left: 100px">
               <a href="#aboutme">about me</a>
             </li>
             <li class="hover:text-gray-500">
@@ -66,17 +83,10 @@
             <li class="hover:text-gray-500">
               <a href="#projects">Projects</a>
             </li>
-            <li class="hover:text-gray-500">
+            <li class="hover:text-gray-500" style="margin-right: 80px">
               <a href="#contact">contact</a>
             </li>
           </ul>
-          <img
-            id="moon"
-            src="./img/logo.jpg"
-            class="hidden md:block w-5 cursor-pointer"
-            alt="moon"
-            style="width: 50px; margin-left: 180px"
-          />
         </div>
       </nav>
       <div
@@ -99,7 +109,7 @@
           </div>
         </div>
         <!-- About Me Section -->
-        <div class="flex flex-col gap-3">
+        <div id="#aboutme" class="flex flex-col gap-3">
           <h1 class="text-3xl font-medium">About me</h1>
           <p class="text-gray-400">
             Hi, I'm Shankhosuvro Ghosh, a fresher with a keen interest in web
@@ -132,39 +142,36 @@
       </div>
     </div>
     <div>
-      <div id="education">
-        <h1 class="font-bold text-3xl text-center">Education</h1>
-      </div>
       <div
+        id="education"
         style="
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
-          text-align: center;
-          border: 1px solid #ddd;
-          border-radius: 20px;
-          width: 600px;
-          margin-left: 470px;
-          margin-top: 20px;
-          margin-bottom: 50px;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          padding: 17px;
+          margin-bottom: 20px;
         "
       >
-        <p style="margin-bottom: 5px">
-          <span style="font-weight: bold">B.Tech ECE</span>, Kalinga Institute
-          of Industrial Technology, Expected 2025
-        </p>
-        <p style="margin-bottom: 5px">
-          <span style="font-weight: bold">Higher Secondary Education</span>,
-          Maharishi Vidya Mandir, 2019-2021
-        </p>
-        <p>
-          <span style="font-weight: bold"> Secondary Education </span>,M.P.
-          Birla Foundation Higher Secondary School, 2007 - 2018
-        </p>
+        <h1 class="font-bold text-3xl text-center">Education</h1>
+        <div
+          class="card"
+          style="margin-top: 20px; width: 60%; margin-bottom: 50px"
+        >
+          <p style="margin-bottom: 5px">
+            <span style="font-weight: bold">B.Tech ECE</span>, Kalinga Institute
+            of Industrial Technology, Expected 2025
+          </p>
+          <p style="margin-bottom: 5px">
+            <span style="font-weight: bold">Higher Secondary Education</span>,
+            Maharishi Vidya Mandir, 2019-2021
+          </p>
+          <p>
+            <span style="font-weight: bold">Secondary Education</span>, M.P.
+            Birla Foundation Higher Secondary School, 2007 - 2018
+          </p>
+        </div>
       </div>
     </div>
+
     <div>
       <div class="container mx-auto" style="margin-top: 0">
         <div class="flex justify-center">
